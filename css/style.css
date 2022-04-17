@@ -1,0 +1,143 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Page Container */
+#container{
+    background-color: #f1f1f1;
+    display: flex;
+    height: auto;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* Left Page */
+#left{
+    flex: 33.3333%;
+    background-color: #fff;
+    height: 1090px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);   
+    border-top-left-radius: 7px;
+}
+.image{
+    position: relative;
+}
+.image img{
+    width: 100%;
+}
+.image h2{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-weight: lighter;
+}
+.box-1,.box-2,.box-3{
+    padding: 0px 18px;
+    line-height: 2rem;
+    color: #000;
+}
+.box-1{
+    padding-top:12px;
+}
+.box-3{
+    padding-top:35px;
+    padding-bottom: 22px;
+}
+.box-2 p, .box-3 p{
+    padding: 9px 0px;
+}
+.btn{
+	background-color: #f1f1f1;
+	line-height: 1.4;
+	border-radius: 25px;
+}
+.btn2{
+	background-color: #009688;
+	text-align: center;
+	border-radius: 25px;
+	color: #fff;
+	font-size: 13px;
+}
+
+/* Common Style */
+hr{
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 20px 15px;
+}
+i{
+    padding-right: 32px;
+    color: #009688!important;
+}
+.text-gray{
+	color: #757575!important;
+}
+.text-green{
+	color: #009688!important;
+}
+span{
+    color: #fff;
+    background-color: #009688!important;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-weight: lighter;
+}
+
+/* Right Page */
+#right{
+    flex: 66.6666%;
+    height: auto;
+    row-gap: 18px;
+    display: flex;
+    flex-direction: column;
+}
+.top{
+	/* height: 500px; */
+	background-color: #fff;
+	padding: 25px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+.top h1{
+	padding-top: 5px;
+    padding-bottom: 30px;
+}
+.top h3, h4{
+	color: #757575;
+    padding: 12px 0;
+}
+.bottom{
+	padding-left: 12px;
+    line-height: 1.4rem;
+}
+.bottom h4{
+	padding: 12px 0;
+}
+
+/* footer */
+footer{
+	background-color: #009688;
+    height: 135px;
+    text-align: center;
+    color: #fff;
+	font-size: medium;
+}
+footer i{
+    color: #fff!important;
+	padding: 24px 0;
+}
+footer a{
+    color: #fff;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px){
+    #container{
+        flex-direction: column;
+    }
+}
